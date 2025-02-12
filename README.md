@@ -1,5 +1,3 @@
----
-
 RIFS – Robotic Interactive Feedback System
 
 📌 Disclaimer
@@ -27,5 +25,3 @@ While this project was a key step in my journey, my approach to software develop
 ✅ Clean, modular, and maintainable code.
 ✅ Scalable architectures.
 ✅ Best practices in software engineering.
-
----
