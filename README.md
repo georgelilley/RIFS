@@ -8,16 +8,16 @@ This is a legacy project created in 2022/23 during my university studies. The co
 
 RIFS (Robotic Interactive Feedback System) is a project exploring sonic automata and musical robotics. It features:
 
--A robotic catapult arm system controlled by a Teensy microcontroller using Arduino IDE.
-    Max/MSP software for real-time sound processing.
-    An array of speakers and microphones, enabling dynamic interaction through feedback loops.
+-    A robotic catapult arm system controlled by a Teensy microcontroller using Arduino IDE.
+-    Max/MSP software for real-time sound processing.
+-    An array of speakers and microphones, enabling dynamic interaction through feedback loops.
 
 🎯 Project Goals
 
 The project aimed to investigate:
 
-    How robotic systems can extend musical creativity beyond traditional human musicianship.
-    The interplay between mechanics, sound processing, and generative music.
+-    How robotic systems can extend musical creativity beyond traditional human musicianship.
+-    The interplay between mechanics, sound processing, and generative music.
 
 ⚡ Future Reflection
 
