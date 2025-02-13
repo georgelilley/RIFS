@@ -1,10 +1,13 @@
 🤖 RIFS – Robotic Interactive Feedback System
+
 📌 Disclaimer
 
 This is a legacy project created in 2022/23 during my university studies. While the code in this repository may not reflect best practices, I believe it is valuable to showcase my progress. Since then, I have focused on writing cleaner, more maintainable code, following principles from Clean Code by Robert C. Martin.
+
 🎛 Project Overview
 
 RIFS (Robotic Interactive Feedback System) is a sonic automaton designed to explore new forms of musical creativity through robotic feedback loops and sensor-based interaction.
+
 🔹 Key Features
 
 -  Robotic catapult arm system controlled via a Teensy microcontroller with Arduino IDE.
