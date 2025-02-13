@@ -60,6 +60,7 @@ Key insights:
 ✅ Sonic automata introduce stochastic behavior, creating unique, evolving compositions.
 ✅ Autonomous music systems can generate unexpected creative outputs beyond human intuition.
 ✅ Feedback loops and physical computing (sensors, motors) bring an organic quality to digital music.
+
 🔥 Evaluation & Future Work
 
 ✅ Successes
