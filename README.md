@@ -1,12 +1,17 @@
 #🤖 RIFS – Robotic Interactive Feedback System
 
 ## 🎥 Video Demo  
-👉 [Watch the Demo 1 on YouTube]([https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/F7wPPT4t8aY))
-👉 [Watch the Demo 2 on YouTube]([https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/3jAcDtHfG2Q))  
-👉 [Watch the Demo 3 (explanation) on YouTube]([https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/l0ASNh7UYm8)) 
-👉 [Watch the Demo 4 on YouTube]([https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/o-HWAWLgwmI))  
-👉 [Watch the Demo 5 on YouTube]([https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/E5-lMnob11M))  
-👉 [Watch the Demo 6 on YouTube]([https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/eqWqho472yY))  
+👉 [Watch the Demo 1 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/F7wPPT4t8aY)
+
+👉 [Watch the Demo 2 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/3jAcDtHfG2Q)  
+
+👉 [Watch the Demo 3 (explanation) on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/l0ASNh7UYm8)
+
+👉 [Watch the Demo 4 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/o-HWAWLgwmI)
+
+👉 [Watch the Demo 5 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/E5-lMnob11M)  
+
+👉 [Watch the Demo 6 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/eqWqho472yY) 
 
 ---
 
