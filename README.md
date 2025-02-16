@@ -5,7 +5,7 @@
 
 👉 [Watch the Demo 2 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/3jAcDtHfG2Q)  
 
-👉 [Watch the Demo 3 (explanation) on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/l0ASNh7UYm8)
+👉 [Watch the Demo 3 (Talk Through) on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/l0ASNh7UYm8)
 
 👉 [Watch the Demo 4 on YouTube](https://youtu.be/FxQiP6Kh7Rc](https://youtu.be/o-HWAWLgwmI)
 
