@@ -1,102 +1,128 @@
-#🤖 RIFS – Robotic Interactive Feedback System
+# 🤖 RIFS – Robotic Interactive Feedback System
 
-## 🎥 Video Demo  
-👉 [Watch the Demo 1 on YouTube](https://youtu.be/F7wPPT4t8aY)
+Real-time autonomous robotics project combining sensing, audio analysis, and
+physical actuation.
 
-👉 [Watch the Demo 2 on YouTube](https://youtu.be/3jAcDtHfG2Q)  
+RIFS listens to its acoustic environment, decides where the dominant signal is
+coming from, physically repositions a microphone using servo motors, and feeds
+the captured sound back into a speaker system to create an evolving feedback
+loop.
 
-👉 [Watch the Demo 3 (Talk Through/Project Explanation) on YouTube](https://youtu.be/l0ASNh7UYm8)
-
-👉 [Watch the Demo 4 on YouTube](https://youtu.be/o-HWAWLgwmI)
-
-👉 [Watch the Demo 5 on YouTube](https://youtu.be/E5-lMnob11M)  
-
-👉 [Watch the Demo 6 on YouTube](https://youtu.be/eqWqho472yY) 
+🎥 **Demo videos**  
+👉 https://youtu.be/F7wPPT4t8aY  
+👉 https://youtu.be/3jAcDtHfG2Q  
+👉 https://youtu.be/l0ASNh7UYm8  
+👉 https://youtu.be/o-HWAWLgwmI  
+👉 https://youtu.be/E5-lMnob11M  
+👉 https://youtu.be/eqWqho472yY  
 
 ---
 
-📌 Disclaimer
+## Overview
 
-This is a legacy project created in 2022/23 during my university studies. While the code in this repository may not reflect best practices, I believe it is valuable to showcase my progress. Since then, I have focused on writing cleaner, more maintainable code, following principles from Clean Code by Robert C. Martin.
+This project required integrating:
 
-🎛 Project Overview
+- real-time sensor input  
+- decision logic  
+- embedded firmware  
+- host-side audio processing  
+- mechanical movement  
 
-RIFS (Robotic Interactive Feedback System) is a sonic automaton designed to explore new forms of musical creativity through robotic feedback loops and sensor-based interaction.
+The system operates continuously without human intervention and produces
+non-deterministic outcomes based on live environmental conditions.
 
-🔹 Key Features
+---
 
--  Robotic catapult arm system controlled via a Teensy microcontroller with Arduino IDE.
--  Max/MSP software for real-time sound processing and decision-making.
--  Interactive feedback system using directional microphones and speakers to generate evolving sound textures.
--  Autonomous decision-making to reposition the robotic microphone based on live audio input.
+## What the System Does
 
-🎯 Project Goals
+1. Detects relative loudness using multiple directional microphones.  
+2. Determines the most active sound source.  
+3. Commands a robotic arm (via a Teensy microcontroller) to rotate toward it.  
+4. Captures audio and re-injects it into the environment.  
+5. The new sound alters the next decision cycle.
 
-This project aimed to investigate:
-✅ How robotic systems can extend musical creativity beyond traditional human musicianship.
-✅ The role of stochastic processing and feedback loops in shaping evolving soundscapes.
-✅ How sonic automata can interact in an ensemble setting, responding to other robotic instruments.
+This creates a closed feedback loop between environment → computation →
+mechanics → environment.
 
-🎵 How It Works
+---
 
-🔊 Audio Input & Feedback:
+## Responsibilities & Engineering Work
 
--  The system uses four outward-facing microphones to detect the loudest sound in the environment.
--  The robotic arm then positions the Teensy microphone towards this source.
--  The captured signal is fed back into the speakers, triggering a dynamic feedback loop.
+- Firmware development for Teensy-based motor control  
+- Serial communication between microcontroller and host system  
+- Real-time audio analysis in Max/MSP  
+- Decision logic for directional targeting  
+- Physical integration and iterative tuning
+- System debugging across hardware + software boundaries  
+- End-to-end integration and live testing
 
-🛠 Hardware & Software Stack:
+---
 
--  Microcontroller: Teensy 3.x
--  Software: Arduino IDE, Max/MSP
--  Audio Processing: Logic Pro X, Zoom F4 (used as an interface)
--  Servo Motors: SG90 Servo motors for microphone positioning
+## Architecture (High Level)
 
-🎶 Musical Interactivity & Sonic Automata
+Microphones → Audio Interface → Max/MSP Processing  
+→ Direction Decision → Serial Command  
+→ Teensy → Servo Motors → Microphone Movement  
+→ Updated Acoustic Input → repeat
 
--  The movement of the microphone introduces natural variations due to air resistance and physical constraints.
--  The system's autonomous decision-making ensures that it constantly evolves, making each interaction unique.
+---
 
-📚 Research & Inspiration
-🎼 Context & Creative Influence
+## Key Technical Challenges
 
-RIFS was inspired by:
+### Real-time behaviour
+Latency directly affected physical motion and audio response.  
+Processing and actuation had to remain tightly coordinated.
 
--  Dylan Sheridan’s "Random Impulse" (2021) – A kinetic microphone-based project that introduced elements of randomness through physical motion.
--  Steve Reich’s "Pendulum Music" – A pioneering work in microphone-based generative sound.
--  Stochastic Music Theories – The project integrates ideas from Iannis Xenakis, using randomness to shape complex sonic textures.
--  Musebot Ensemble Manifesto (2015) – Inspired by modular robotic musical agents interacting in real-time.
+### Noisy input
+Environmental sound is unpredictable.  
+Logic had to remain stable despite chaotic data.
 
-📊 Research Question
+### Physical constraints
+Momentum, elasticity, and air resistance introduced variation beyond software
+control, requiring calibration and resilience in the control strategy.
 
-"How can sonic automata and musical robots explore new ideas of musical creativity beyond conventional human musicianship?"
+### Cross-domain debugging
+Issues could originate in hardware, firmware, audio routing, or mechanical
+movement.
 
-Key insights:
-✅ Sonic automata introduce stochastic behavior, creating unique, evolving compositions.
-✅ Autonomous music systems can generate unexpected creative outputs beyond human intuition.
-✅ Feedback loops and physical computing (sensors, motors) bring an organic quality to digital music.
+---
 
-🔥 Evaluation & Future Work
+## Technology Stack
 
-✅ Successes
+**Embedded:** Teensy 3.x, Arduino  
+**Host Processing:** Max/MSP  
+**Audio Routing:** external interfaces & live monitoring  
+**Actuation:** SG90 servo motors  
+**Languages:** C++ / Arduino, Max patch logic
 
--  Fully autonomous system responding to real-time audio input.
--  Unique feedback-based sound design, integrating stochastic principles.
--  Potential for ensemble performance alongside other sonic automata.
+---
 
-🔧 Areas for Improvement
+## Outcome
 
--  The Teensy microphone is resilient, but a protective mesh could extend its lifespan.
--  The robotic arm elasticity introduces unintended shape changes, sometimes requiring manual resets.
--  Further development could include randomized mappings for more expressive control.
+Delivered a fully autonomous system capable of:
 
-🎯 Future Development
+- continuous operation  
+- environment-aware behaviour  
+- repeatable sensing → decision → actuation cycles  
 
--  Implementing MIDI control & generative sequencing.
--  Expanding machine learning techniques for more adaptive responses.
--  Exploring hardware refinements for enhanced durability.
+Every run produced different results while remaining structurally stable.
 
-🔗 Additional Resources
+---
 
-📽 Inspiration – "Random Impulse" by Dylan Sheridan: Vimeo
-📄 Musebot Ensemble Manifesto: Research Paper
+## Context
+
+Originally developed during undergraduate study.  
+While the implementation reflects the tools and experience I had at the time,
+the project remains a strong example of early systems integration, real-time
+reasoning, and hardware/software coordination.
+
+---
+
+## Why it still matters
+
+This work formed my foundation for later interests in:
+
+- event-driven systems  
+- automation  
+- control flows  
+- designing software that interacts with the real world
